@@ -417,6 +417,18 @@ h6, .h6 {
   font-family: "Open Sans", sans-serif;
 }
 
+/* ABOUT PAGE - HEADING AND TEXT READABILITY */
+.my-services .service h3,
+.my-services .section-title {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+.my-services .service p {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
 /****************/
 /*   Progress   */
 /****************/
