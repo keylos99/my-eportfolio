@@ -1,0 +1,272 @@
+/* Font families */
+$primary-font: 'Source Sans Pro', sans-serif;
+$secondary-font: "Open Sans", sans-serif;
+$code-font: 'Source Code Pro', monospace;
+
+/* Font weight */
+$fw-regular: 300;
+$fw-semi-bold: 600;
+$fw-bold: 900;
+
+/* Theme colors */
+$white:     #ffffff !default;
+$gray-100:  #f5f5f5;
+$gray-300:  #e7e7e7;
+$gray-500:  #8c8c8c;
+$gray-700:  #404040;
+$gray-800:  #343b43;
+$gray-900:  #30363d;
+$black:     #000000 !default;
+
+$color-primary: #ac32e4;
+$color-secondary: $gray-100;
+$color-active: #921ac9;
+$color-light: $white;
+$color-dark: $gray-800;
+$color-darker: $gray-900;
+
+$color-accent: #e833b0 !important;
+$color-info: #5695fe !important;
+$color-success: #33cb81 !important;
+$color-warning: #fc8c3a !important;
+$color-danger: #ff5252 !important;
+
+/* Options */
+$enable-shadows:      false;
+$enable-rounded:      false;
+$enable-transitions:  true;
+
+/* spacing */
+$spacer: 1rem !default;
+
+/* Screen Breakpoints */
+$mobile-breakpoint: 800px;
+
+/* Font sizes */
+$fs-nano: .5625rem; /* 9px */ 
+$fs-xs: .6875rem;   /* 11px */ 
+$fs-sm: .75rem;     /* 12px */
+$fs-md: .875rem;    /* 14px */
+$fs-base: 1rem;     /* 16px */
+$fs-reg: 1.125rem;  /* 18px */
+$fs-lg: 1.25rem;    /* 20px */
+$fs-xl: 1.5rem;     /* 24px */
+$fs-xxl: 1.75rem;   /* 28px */
+$fs-social-button: ($fs-base * 2.25) !default;
+
+/* Headings */
+$body-fs: $fs-base;
+$h1-fs: 3rem;       /* 48px */
+$h2-fs:	2.5rem;     /* 40px */
+$h3-fs:	2.125rem;   /* 34px */
+$h4-fs:	1.625rem;   /* 26px */
+$h5-fs:	1.313rem;   /* 21px */
+$h6-fs:	1.125rem;   /* 18px */
+
+$h1-line-height: 1.2 !default;
+$h2-line-height: 1.2 !default;
+$h3-line-height: 1.25 !default;
+$h4-line-height: 1.3 !default;
+$h5-line-height: 1.35 !default;
+$h6-line-height: 1.4 !default;
+
+$heading-margin-bottom: .75;
+$heading-ff: $primary-font;
+$heading-fw: $fw-bold;
+$heading-color: $color-dark;
+$heading-ts: 0 .625rem 1.5rem rgba($black, .2);
+
+/* Display headings */
+$d1-size: 6rem;   /* 96px */
+$d2-size: 5.5rem; /* 88px */
+$d3-size: 5rem;   /* 72px */
+$d4-size: 4rem;   /* 56px */
+
+$d1-weight: $fw-bold;
+$d2-weight: $fw-bold;
+$d3-weight: $fw-bold;
+$d4-weight: $fw-bold;
+$d-line-height: 1.1;
+
+/* Lead text */
+$lead-fs: 1.5rem;
+$lead-fw: normal;
+
+/**************/
+/* Typography */
+/**************/
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin: {
+    top: 0;
+    bottom: $heading-margin-bottom;
+  }
+  color: $heading-color;
+  font-weight: $heading-fw;
+  letter-spacing: .021em;
+  small {
+    display: block;
+    padding-top: 3px;
+    color: $gray-500;
+  }
+}
+h1, .h1 { line-height: $h1-line-height; font-size: $h1-fs; }
+h2, .h2 { line-height: $h2-line-height; font-size: $h2-fs; }
+h3, .h3 { line-height: $h3-line-height; font-size: $h3-fs; }
+h4, .h4 { line-height: $h4-line-height; font-size: $h4-fs; }
+h5, .h5 { line-height: $h5-line-height; font-size: $h5-fs; }
+h6, .h6 { line-height: $h6-line-height; font-size: $h6-fs; }
+
+.display-1, .display-2,
+.display-3, .display-4 {
+  margin-bottom: $heading-margin-bottom;
+  letter-spacing: .021em;
+}
+
+.text-muted { color: $gray-500 !important; }
+
+/* Text sizes */
+.lead { font-size: $lead-fs !important; }
+.text-xl { font-size: $fs-xl !important; }
+.text-lg { font-size: $fs-lg !important; }
+.text-md { font-size: $fs-md !important; }
+.text-sm { font-size: $fs-sm !important; }
+.text-xs { font-size: $fs-xs !important; }
+
+/* Responsive typography */
+@media (max-width: $mobile-breakpoint) {
+  .display-1 { font-size: $d1-size * .65; }
+  .display-2 { font-size: $d2-size * .7; }
+  .display-3 { font-size: $d3-size * .7; }
+  .display-4 { font-size: $d4-size * .85; }
+  h1, .h1 { font-size: $h1-fs * .8; }
+  h2, .h2 { font-size: $h2-fs * .85; }
+  h3, .h3 { font-size: $h3-fs * .9; }
+}
+
+/* Border */
+$border-color: $gray-300;
+$border-light-color: rgba($white, .14) !default;
+$border-radius: .3rem;
+
+/* Box shadow */
+$box-shadow: 0 1.375rem 2.25rem -.75rem rgba($gray-700, .13);
+$box-shadow-pressed: 0 .625rem 1.5rem -.625rem rgba($gray-700, .22) !default;
+$box-shadow-inset: inset 0 1.25rem 1.875rem -.75rem rgba($gray-700, .12) !default;
+$box-shadow-social-button: 0 .75rem 1.25rem .0625rem rgba($gray-700, .11) !default;
+$box-shadow-contact-form: 0 1.1rem 1.25rem 0.0625rem rgba(64,64,64,0.09);
+
+/* Background color & gradient */
+.bg-secondary {
+  background-color: $gray-100 !important;
+}
+.bg-priamry {
+  background: $color-primary !important;
+}
+.bg-gradient {
+  background: -webkit-gradient(linear, left top, right top, from(#ac32e4), color-stop(20%, #ac32e4), to(#e833b0)) !important;
+  background: linear-gradient(to right, #ac32e4 0%, #ac32e4 20%, #e833b0 100%) !important;
+}
+.btn-gradient {
+  background: linear-gradient(to right, #ac32e4 0%, #ac32e4 20%, #e833b0 100%) !important;
+}
+
+/* Progress Bars */
+$progress-height: 2rem;
+$progress-bg: $gray-300;
+$progress-light-bg: rgba($white, .12) !default;
+$progress-box-shadow: none;
+$progress-bar-box-shadow: 0 .5rem 1rem 0 rgba($black, .15) !default;
+$progress-outer-label-size: $fs-sm !default;
+$progress-outer-label-color: lighten($gray-500, 15%) !default;
+$progress-font-size: $fs-sm;
+$progress-bar-color: $white;
+$progress-bar-bg: $color-primary;
+
+@mixin progress-bar-font($fs-val, $fw-val) {
+  font: {
+    family: $secondary-font;
+    size: $fs-val;
+    weight: $fw-val;
+  }
+}
+
+@mixin box-shadow($value) {
+  box-shadow: $value;
+}
+
+.bg-accent { background-color: $color-accent; }
+.bg-info { background-color: $color-info; }
+.bg-success { background-color: $color-success; }
+.bg-warning { background-color: $color-warning; }
+.bg-danger { background-color: $color-danger; }
+.bg-dark { background-color: $color-dark; }
+
+/* Flex alignment options */
+.align-self-center { align-self: center !important; }
+
+/* Placeholders */
+%divider {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 1px;
+  width: 36px;
+  height: 2px;
+  @extend .bg-gradient;
+  content: '';
+}
+
+/* Forms */
+$input-padding-x:             .9375rem;
+$input-padding-y:             .5rem;
+$input-padding-x-sm:          $input-padding-x;
+$input-height-lg:							54px;
+$input-height:								44px;
+$input-height-sm:							32px;
+$input-border-width:          1px;
+$input-border-color:          darken($border-color, 1%);
+$input-color:                 $gray-700;
+$input-placeholder-color:     $gray-500;
+$input-transition:            border-color .2s ease-in-out, box-shadow .2s ease-in-out, background-color .2s ease-in-out;
+$input-box-shadow:            0 9px 24px -4px rgba($gray-700, .16);
+$input-focus-border-color:    $white;
+$input-disabled-bg:           $gray-100;
+$form-group-margin-bottom:    ($spacer * 1.5);
+
+/* Buttons */
+$btn-height-lg:               54px !default;
+$btn-height:                  44px !default;
+$btn-height-sm:               32px !default;
+$btn-height-xs:               24px !default;
+$btn-padding-y:               0;
+$btn-padding-x:               1.75rem;
+$btn-line-height:             $btn-height;
+$btn-padding-y-xs:            0 !default;
+$btn-padding-x-xs:            .75rem !default;
+$btn-line-height-xs:          $btn-height-xs !default;
+$btn-padding-y-sm:            0;
+$btn-padding-x-sm:            1.25rem;
+$btn-line-height-sm:          $btn-height-sm;
+$btn-padding-y-lg:            0;
+$btn-padding-x-lg:            2rem;
+$btn-line-height-lg:          $btn-height-lg;
+$button-font-size-lg:         ($fs-base * .8125) !default;
+$button-font-size:            $fs-md !default;
+$button-font-size-sm:         ($fs-base * .6875) !default;
+$button-font-size-xs:         $fs-xs !default;
+$btn-font-weight:             bold;
+$btn-text-transform:          uppercase !default;
+$btn-letter-spacing:          .1em !default;
+$btn-transition:              all .3s !important;
+$btn-box-shadow:              none;
+$btn-focus-box-shadow:        none;
+$btn-active-box-shadow:       none;
+$btn-disabled-opacity:        .5;
+
+/* Pagination */
+$pagination-link-height:        36px !default;
+$navigation-link-height:        44px !default;
+$pagination-link-color:         $gray-700 !default;
+$pagination-link-active-color:  $color-primary !default;
+$pagination-link-box-shadow:    0 .75rem 1.25rem .0625rem rgba($gray-700, .11) !default;

@@ -1,0 +1,135 @@
+.logo {
+  max-width: 163px;
+  max-height: 42px;
+  position: relative;
+  margin: 0;
+  background: #343b43;
+  box-shadow: inset 0 0 20px #171a1e;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.logo-wrap, svg, .border, .letter {
+  transition: all 366ms ease-in-out;
+}
+
+.logo-wrap {
+  margin: 0;
+  width: 70px;
+  height: 42px;
+  background: #fff;
+  box-shadow: inset 0 0 0 0px #343b43, inset 0 0 0 4px #ac32e4;
+  transition-delay: 366ms;
+  opacity: 0;
+  transform: scale(1);
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1.75s;
+  animation-delay: 0;
+}
+.logo-wrap .tagline {
+  width: 310px;
+  margin-left: -107.1px;
+  position: absolute;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(52, 59, 67, 0.1);
+  transition: all 366ms ease-in-out 122ms;
+}
+.logo-wrap .tagline .filler {
+  margin: 0;
+  opacity: 0;
+  transition: opacity 146.4ms ease-in-out;
+}
+.logo-wrap:hover .tagline {
+  width: 310px;
+  margin-left: 0px;
+  color: #343b43;
+  transition: all 366ms ease-in-out 0;
+}
+.logo-wrap:hover .tagline .filler {
+  opacity: 1;
+  transition: opacity 366ms ease-in-out;
+}
+.logo-wrap svg .border {
+  fill: #ac32e4;
+  opacity: 0.1;
+}
+.logo-wrap svg .letter {
+  fill: #ac32e4;
+  opacity: 0.1;
+}
+.logo-wrap svg .letter.e-1, .logo-wrap svg .letter.c, .logo-wrap svg .letter.t, .logo-wrap svg .letter.o-1, .logo-wrap svg .letter.r-1, .logo-wrap svg .letter.r-2, .logo-wrap svg .letter.i, .logo-wrap svg .letter.v, .logo-wrap svg .letter.e-2, .logo-wrap svg .letter.r-3, .logo-wrap svg .letter.o-2 {
+  opacity: 0;
+}
+.logo-wrap svg .letter.h, .logo-wrap svg .letter.r-0 {
+  opacity: 1;
+  fill: #343b43;
+}
+.logo-wrap:hover {
+  width: 310px;
+  background: transparent;
+  transition-delay: 0s;
+  box-shadow: inset 0 0 0 4px #ac32e4, inset 0 0 0 6px #fff;
+}
+.logo-wrap:hover svg .border {
+  opacity: 1;
+}
+.logo-wrap:hover svg .letter {
+  opacity: 1;
+  transition-delay: 366ms;
+}
+.logo-wrap:hover svg .letter.h, .logo-wrap:hover svg .letter.e-1, .logo-wrap:hover svg .letter.c, .logo-wrap:hover svg .letter.t, .logo-wrap:hover svg .letter.o-1, .logo-wrap:hover svg .letter.r-1 {
+  fill: #fff;
+}
+.logo-wrap:hover svg .letter.r-0 {
+  opacity: 0;
+}
+.logo-wrap:hover svg .letter.e-1, .logo-wrap:hover svg .letter.c, .logo-wrap:hover svg .letter.t, .logo-wrap:hover svg .letter.o-1, .logo-wrap:hover svg .letter.r-1, .logo-wrap:hover svg .letter.r-2, .logo-wrap:hover svg .letter.i, .logo-wrap:hover svg .letter.v, .logo-wrap:hover svg .letter.e-2, .logo-wrap:hover svg .letter.r-3, .logo-wrap:hover svg .letter.o-2 {
+  opacity: 1;
+}
+.logo-wrap:hover svg .letter.e-1 {
+  transition-delay: 402.6ms;
+}
+.logo-wrap:hover svg .letter.c {
+  transition-delay: 439.2ms;
+}
+.logo-wrap:hover svg .letter.t {
+  transition-delay: 475.8ms;
+}
+.logo-wrap:hover svg .letter.o-1 {
+  transition-delay: 512.4ms;
+}
+.logo-wrap:hover svg .letter.r-1 {
+  transition-delay: 549ms;
+}
+.logo-wrap:hover svg .letter.r-2 {
+  transition-delay: 585.6ms;
+}
+.logo-wrap:hover svg .letter.i {
+  transition-delay: 622.2ms;
+}
+.logo-wrap:hover svg .letter.v {
+  transition-delay: 658.8ms;
+}
+.logo-wrap:hover svg .letter.e-2 {
+  transition-delay: 695.4ms;
+}
+.logo-wrap:hover svg .letter.r-3 {
+  transition-delay: 732ms;
+}
+.logo-wrap:hover svg .letter.o-2 {
+  transition-delay: 768.6ms;
+}
+
+/*# sourceMappingURL=logo.css.map */
