@@ -842,3 +842,18 @@ section.contact-form {
     font-size: var(--fs-base);
     font-weight: var(--fw-semi-bold);
 }
+
+/* About Page - Improve Service Heading Readability */
+.my-services .service h3 {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+.my-services .service p {
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+.my-services .section-title {
+    color: #ffffff;
+}
