@@ -5,40 +5,47 @@
 }
 
 /* Custom properties using native variables in CSS */
+
 :root {
-    /* setup the font-family: primary & secondary */
+    /* Fonts */
     --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
-    /* setup font weight: regular, bold */
+    --ff-secondary: Georgia, serif;
+
+    /* Font weights */
     --fw-reg: 300;
     --fw-semi-bold: 600;
     --fw-bold: 900;
-    /* setup custom colors */
+
+    /* Blush, cream and brown palette */
     --clr-white: #ffffff;
-    --clr-gray-100: #f5f5f5;
-    --clr-gray-300: #e7e7e7;
-    --clr-gray-500: #8c8c8c;
-    --clr-gray-700: #404040;
-    --clr-gray-800: #343b43;
-    --clr-gray-900: #30363d;
-    --clr-black: #000000;
-    --clr-light: #fff;
-    --clr-gray: #f5f5f5;
-    --clr-dark: #343b43;
-    --clr-darker: #30363D;
-    --clr-accent: #ac32e4;
-    --clr-btn: #ac32e4;
-    --clr-btn-active: #921ac9;
-    /* setup font size */
-    --fs-nano: .5625rem; /* 9px */ 
-    --fs-xs: .6875rem;   /* 11px */ 
-    --fs-sm: .75rem;     /* 12px */
-    --fs-md: .875rem;    /* 14px */
-    --fs-base: 1rem;     /* 16px */
-    --fs-reg: 1.125rem;  /* 18px */
-    --fs-lg: 1.25rem;    /* 20px */
-    --fs-xl: 1.5rem;     /* 24px */
-    --fs-xxl: 1.75rem;   /* 28px */
+    --clr-gray-100: #FAF5F1;
+    --clr-gray-300: #EADDD6;
+    --clr-gray-500: #A88F83;
+    --clr-gray-700: #655149;
+    --clr-gray-800: #49352F;
+    --clr-gray-900: #382B28;
+
+    --clr-black: #241B19;
+    --clr-light: #FAF5F1;
+    --clr-gray: #EADDD6;
+    --clr-dark: #49352F;
+    --clr-darker: #382B28;
+
+    /* Accent colors */
+    --clr-accent: #C58F91;
+    --clr-btn: #A87572;
+    --clr-btn-active: #875A58;
+
+    /* Font sizes */
+    --fs-nano: .5625rem;
+    --fs-xs: .6875rem;
+    --fs-sm: .75rem;
+    --fs-md: .875rem;
+    --fs-base: 1rem;
+    --fs-reg: 1.125rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.5rem;
+    --fs-xxl: 1.75rem;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -46,13 +53,15 @@
     --fs-h5: .25rem;
     --fs-body: 1rem;
     --fs-small: .6rem;
-    /* box shadow */
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-          0.125em 0.125em 0.25em rgba(0,0,0,.15);
-    /* text shadow */
-    --ts: 0 0.625rem 1.5rem rgba(0,0,0,0.2);
-    /* background gradient */
-    --bg-gradient: linear-gradient(to right, #ac32e4 0%, #ac32e4 20%, #e833b0 100%) !important;
+
+    /* Shadows */
+    --bs: 0.25em 0.25em 0.75em rgba(56,43,40,.12),
+          0.125em 0.125em 0.25em rgba(56,43,40,.08);
+
+    --ts: 0 0.625rem 1.5rem rgba(56,43,40,.12);
+
+    /* Background gradient */
+    --bg-gradient: linear-gradient(to right, #C58F91 0%, #D4B5A5 100%);
 }
 
 /* Redefine font sizes for a viewport over 800 pixels wide */
